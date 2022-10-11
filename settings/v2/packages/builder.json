@@ -1,0 +1,13 @@
+{
+  "__version__": "1.3.3",
+  "splash-setting": {
+    "url": "D:\\Desktop\\assets store\\icon.png",
+    "displayWatermark": false,
+    "clearColor": {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    }
+  }
+}

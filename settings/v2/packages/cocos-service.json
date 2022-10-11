@@ -1,0 +1,40 @@
+{
+  "__version__": "3.0.4",
+  "game": {
+    "app_id": "639629973",
+    "name": "Dungeon FPS",
+    "c_id": "0"
+  },
+  "appConfigMaps": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "07dbdf"
+    },
+    {
+      "app_id": "639629973",
+      "config_id": "278034"
+    }
+  ],
+  "configs": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "07dbdf",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": []
+    },
+    {
+      "app_id": "639629973",
+      "config_id": "278034",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "235",
+          "enable": false,
+          "param": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "__version__": "1.0.6",
+  "macroConfig": {
+    "ENABLE_BLOOM": true,
+    "ENABLE_ANTIALIAS_FXAA": true,
+    "CLEANUP_IMAGE_CACHE": true,
+    "ENABLE_TRANSPARENT_CANVAS": false,
+    "ENABLE_WEBGL_HIGHP_STRUCT_VALUES": false
+  }
+}

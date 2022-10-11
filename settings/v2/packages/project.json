@@ -1,0 +1,27 @@
+{
+  "__version__": "1.0.2",
+  "general": {
+    "designResolution": {
+      "width": 1920,
+      "height": 1080,
+      "fitWidth": false,
+      "fitHeight": false
+    }
+  },
+  "layer": [
+    {
+      "name": "Arms",
+      "value": 1
+    },
+    {
+      "name": "bullets",
+      "value": 2
+    }
+  ],
+  "physics": {
+    "gravity": {
+      "y": -10
+    },
+    "autoSimulation": true
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "17003929-48ba-4772-8c94-221d32013d25",
+  "files": [],
+  "subMetas": {
+    "41ac8": {
+      "importer": "gltf-mesh",
+      "uuid": "17003929-48ba-4772-8c94-221d32013d25@41ac8",
+      "displayName": "",
+      "id": "41ac8",
+      "name": "Cube.001.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "48b02": {
+      "importer": "gltf-embeded-image",
+      "uuid": "17003929-48ba-4772-8c94-221d32013d25@48b02",
+      "displayName": "",
+      "id": "48b02",
+      "name": "base_color_texture.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "7d6ab": {
+      "importer": "texture",
+      "uuid": "17003929-48ba-4772-8c94-221d32013d25@7d6ab",
+      "displayName": "",
+      "id": "7d6ab",
+      "name": "base_color_texture.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "17003929-48ba-4772-8c94-221d32013d25@48b02"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f47e5": {
+      "importer": "gltf-material",
+      "uuid": "17003929-48ba-4772-8c94-221d32013d25@f47e5",
+      "displayName": "",
+      "id": "f47e5",
+      "name": "Drain.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1bcd3": {
+      "importer": "gltf-scene",
+      "uuid": "17003929-48ba-4772-8c94-221d32013d25@1bcd3",
+      "displayName": "",
+      "id": "1bcd3",
+      "name": "drain.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "base_color_texture",
+        "uri": "17003929-48ba-4772-8c94-221d32013d25@48b02"
+      }
+    ],
+    "legacyFbxImporter": false,
+    "allowMeshDataAccess": true,
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "17003929-48ba-4772-8c94-221d32013d25@1bcd3",
+    "assetFinder": {
+      "meshes": [
+        "17003929-48ba-4772-8c94-221d32013d25@41ac8"
+      ],
+      "skeletons": [],
+      "textures": [
+        "17003929-48ba-4772-8c94-221d32013d25@7d6ab"
+      ],
+      "materials": [
+        "17003929-48ba-4772-8c94-221d32013d25@f47e5"
+      ],
+      "scenes": [
+        "17003929-48ba-4772-8c94-221d32013d25@1bcd3"
+      ]
+    }
+  }
+}
