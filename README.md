@@ -1,4 +1,4 @@
-# Dungeon-3D
+# Dungeon 3D
 The source code to the browser game Dungeon 3D developed in Cocos Creator.
 
 # About the project
