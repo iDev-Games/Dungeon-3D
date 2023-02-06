@@ -4,7 +4,7 @@ The source code to the browser game Dungeon 3D developed in Cocos Creator.
 # About the project
 This is the Alpha version of Dungeon 3D, A 3D browser based FPS game built in Cocos Creator 3.6.1. 
 
-https://play.idevgames.co.uk/game/dungeon-3d
+https://iDev.Games/game/dungeon-3d
 
 # Usage
 This game source code and its assets are free for you to edit, learn and build on top of for commercial or personal projects. Although please do not re release an exact copy. The sounds were either created by me or sourced from https://freesound.org. Textures were either made by me or are from https://3dtextures.me. Everything else was made by me with the help of the developers and community for Cocos Creator.
@@ -15,4 +15,4 @@ This is an early release and I wasn't intially planning on releasing the source 
 # Support this project
 If you would like to support this project. Think about releasing your game on our HTML5 web games platform. Thanks!
 
-https://play.idevgames.co.uk
+https://iDev.Games
