@@ -9,13 +9,13 @@ export class PlayerScript extends Component {
     /* Local Variables */
 
         private movementSpeed = 3;
-        private jumpStrength = 300;
+        private jumpStrength = 400;
         private crouch = 0;
         private moveForward = 0;
         private moveBackward = 0;
         private moveLeft = 0;
         private moveRight = 0;
-        private setSpeed = 0.12;
+        private setSpeed = 8;
         private maxSpeed = 0;
         private speed = 1;
         private grounded = false;
@@ -28,6 +28,7 @@ export class PlayerScript extends Component {
         private minutes = 0;
         private seconds = 0;
         private end = false;
+        private nodePos: Vec3 = new Vec3();
 
     /* End Local Variables */
     
@@ -51,7 +52,7 @@ export class PlayerScript extends Component {
         this.node.getComponent(CapsuleCollider).on('onCollisionExit', this.OnCollisionExit, this);
         this.node.getComponent(CapsuleCollider).radius = this.playerHeight;
         this.maxSpeed = this.setSpeed;
-        this.scene.getChildByName("hitThunder").play("hitThunder.wav");
+        //this.scene.getChildByName("hitThunder").play("hitThunder.wav");
         //this.node.setRotation(0,0,0);
     }
 
@@ -88,7 +89,7 @@ export class PlayerScript extends Component {
             break;}
 
             case KeyCode.SHIFT_LEFT: {
-                this.speed = 1.1;
+                this.setSpeed = 10;
             break;}
 
             case KeyCode.KEY_C: {
@@ -135,7 +136,7 @@ export class PlayerScript extends Component {
             break;}
 
             case KeyCode.SHIFT_LEFT: {
-                this.speed = 1;
+                this.setSpeed = 8;
             break;}
 
             case KeyCode.KEY_R: {
@@ -210,22 +211,22 @@ export class PlayerScript extends Component {
 
     update(deltaTime: number) {
         if(globalVars.currentHealth > 0){
-            if(this.moveForward && this.moveLeft){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(-((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed,0,-((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveForward && this.moveRight){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed,0,-((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveBackward && this.moveLeft){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(-((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed,0,((this.maxSpeed/4)*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveBackward && this.moveRight){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed,0,((this.maxSpeed/4)*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveForward){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(0,0,-(this.maxSpeed*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveBackward){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(0,0,((this.maxSpeed/2)*this.node.getComponent(RigidBody).mass)*this.speed));
-            } else if(this.moveLeft){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3(-(this.maxSpeed*this.node.getComponent(RigidBody).mass)*this.speed,0,0));
-            } else if(this.moveRight){
-                this.node.getComponent(RigidBody).applyLocalImpulse(new Vec3((this.maxSpeed*this.node.getComponent(RigidBody).mass)*this.speed,0,0));
+            this.nodePos = this.node.getPosition();
+            if(this.moveForward){
+                Vec3.add(this.nodePos, this.nodePos, this.node.forward.clone().multiplyScalar(this.setSpeed * deltaTime));
+                this.node.setPosition(this.nodePos);
+            }
+            if(this.moveBackward){
+                Vec3.add(this.nodePos, this.nodePos, this.node.forward.clone().multiplyScalar(-this.setSpeed * deltaTime));
+                this.node.setPosition(this.nodePos);
+            }
+            if(this.moveLeft){
+                Vec3.add(this.nodePos, this.nodePos, this.node.right.clone().multiplyScalar((-this.setSpeed)/2 * deltaTime));
+                this.node.setPosition(this.nodePos);
+            }
+            if(this.moveRight){
+                Vec3.add(this.nodePos, this.nodePos, this.node.right.clone().multiplyScalar((this.setSpeed)/2 * deltaTime));
+                this.node.setPosition(this.nodePos);
             }
 
             if(this.moveForward == 1 || this.moveLeft == 1 || this.moveRight == 1  || this.moveBackward == 1 || this.grounded == false){

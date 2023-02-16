@@ -13,7 +13,7 @@ export class initScript extends Component {
 
     start() {
         this.scene = director.getScene();
-        globalVars.version = "0.1 Alpha";
+        globalVars.version = "0.2 Alpha";
 
 
         this.scene.getChildByName("Canvas").getChildByName("MainMenu").getChildByName("Version").getComponent(Label).string = "V "+globalVars.version;

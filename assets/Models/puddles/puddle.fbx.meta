@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.1",
+  "ver": "2.3.2",
   "importer": "fbx",
   "imported": true,
   "uuid": "54e964dd-82e6-440e-9acc-a6bb352c616e",
@@ -130,18 +130,15 @@
         "_objFlags": 0,
         "_native": "",
         "_effectAsset": {
-          "__uuid__": "5b7d6814-90a6-4d9f-b7fd-410dca9de957",
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
           "__expectedType__": "cc.EffectAsset"
         },
-        "_techIdx": "1",
+        "_techIdx": 1,
         "_defines": [
           {
-            "USE_VERTEX_COLOR": true,
-            "USE_SHININESS_MAP": true,
-            "USE_SPECULAR_MAP": true,
             "USE_ALBEDO_MAP": true,
-            "USE_OCCLUSION_MAP": true,
-            "GLOSSINESS_MAP_USE_SINGLE_CHANNEL": true
+            "HAS_EXPORTED_GLOSSINESS": true,
+            "HAS_EXPORTED_METALLIC": true
           },
           {},
           {}
@@ -183,15 +180,18 @@
             },
             "mainColor": {
               "__type__": "cc.Color",
-              "r": 204,
-              "g": 204,
-              "b": 204,
+              "r": 0,
+              "g": 0,
+              "b": 0,
               "a": 255
             },
-            "shininessExponent": 1000,
-            "specularFactor": 3,
-            "transparencyFactor": 0.442,
-            "metallic": 1
+            "transparencyFactor": 0.477,
+            "glossiness": 0.201,
+            "metallic": 0.69,
+            "metallicMap": {
+              "__uuid__": "b8acd015-2566-4dba-8dd3-7b417595b1fc@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            }
           },
           {},
           {}

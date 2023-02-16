@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.1",
+  "ver": "2.3.2",
   "importer": "fbx",
   "imported": true,
   "uuid": "dd078b4e-2817-41bf-94e5-d7da3f1abb9d",
@@ -119,19 +119,17 @@
         "_objFlags": 0,
         "_native": "",
         "_effectAsset": {
-          "__uuid__": "2ec11458-f855-4978-b14d-f3ed5cf697fa",
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
           "__expectedType__": "cc.EffectAsset"
         },
-        "_techIdx": "0",
+        "_techIdx": 0,
         "_defines": [
           {
             "USE_NORMAL_MAP": true,
+            "USE_SHININESS_MAP": true,
+            "USE_SPECULAR_MAP": true,
             "USE_ALBEDO_MAP": true,
-            "USE_ROUGHNESS_MAP": true,
-            "USE_OCCLUSION_MAP": true,
-            "USE_METALLIC_CHANNEL": true,
-            "USE_ROUGHNESS_CHANNEL": true,
-            "USE_OCCLUSION_CHANNEL": true
+            "HAS_EXPORTED_METALLIC": true
           },
           {},
           {}
@@ -167,32 +165,25 @@
         ],
         "_props": [
           {
-            "mainColor": {
-              "__type__": "cc.Color",
-              "r": 204,
-              "g": 204,
-              "b": 204,
-              "a": 255
-            },
             "mainTexture": {
               "__uuid__": "0969e1b3-8f1b-4eb7-9ab9-13d25f44f49f@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
-            "roughnessMap": {
-              "__uuid__": "1f85f392-02d9-45ca-af2f-9216710e55d0@6c48a",
-              "__expectedType__": "cc.Texture2D"
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 0
             },
-            "metallic": 0,
-            "metallicMap": {
-              "__uuid__": "d425f767-c321-4075-8841-d5cdd0f384e6@6c48a",
-              "__expectedType__": "cc.Texture2D"
-            },
-            "occlusionMap": {
-              "__uuid__": "d425f767-c321-4075-8841-d5cdd0f384e6@6c48a",
-              "__expectedType__": "cc.Texture2D"
-            },
+            "normalStrength": 1.81,
             "normalMap": {
               "__uuid__": "9ce4d987-c42f-41ee-b454-79770b3d20db@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "metallic": 0.247,
+            "metallicMap": {
+              "__uuid__": "d425f767-c321-4075-8841-d5cdd0f384e6@6c48a",
               "__expectedType__": "cc.Texture2D"
             }
           },

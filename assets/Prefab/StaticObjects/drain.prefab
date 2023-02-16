@@ -118,9 +118,7 @@
       }
     ],
     "_visFlags": 0,
-    "lightmapSettings": {
-      "__id__": 5
-    },
+    "lightmapSettings": null,
     "_mesh": {
       "__uuid__": "17003929-48ba-4772-8c94-221d32013d25@41ac8",
       "__expectedType__": "cc.Mesh"
@@ -130,14 +128,17 @@
     "_shadowBias": 0,
     "_shadowNormalBias": 0,
     "_enableMorph": true,
-    "_id": ""
+    "_id": "",
+    "bakeSettings": {
+      "__id__": 5
+    }
   },
   {
     "__type__": "cc.CompPrefabInfo",
     "fileId": "2bone5755WWY8eTS13aqx/"
   },
   {
-    "__type__": "cc.ModelLightmapSettings",
+    "__type__": "cc.ModelBakeSettings",
     "texture": null,
     "uvParam": {
       "__type__": "cc.Vec4",

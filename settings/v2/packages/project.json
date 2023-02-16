@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.2",
+  "__version__": "1.0.4",
   "general": {
     "designResolution": {
       "width": 1920,
@@ -20,7 +20,7 @@
   ],
   "physics": {
     "gravity": {
-      "y": -10
+      "y": -20
     },
     "autoSimulation": true
   }

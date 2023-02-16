@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.1",
+  "ver": "2.3.2",
   "importer": "fbx",
   "imported": true,
   "uuid": "77170f22-fc3b-4dc2-bc76-6661cb721830",
@@ -918,8 +918,8 @@
             "USE_SHININESS_MAP": true,
             "SHININESS_MAP_CHANNEL": "r",
             "USE_ALBEDO_MAP": true,
-            "HAS_EXPORTED_GLOSSINESS": true,
-            "USE_SHININESS_MAP_CHANNEL": true
+            "USE_SHININESS_MAP_CHANNEL": true,
+            "HAS_EXPORTED_METALLIC": true
           },
           {},
           {}
@@ -968,14 +968,14 @@
             },
             "emissive": {
               "__type__": "cc.Color",
-              "r": 255,
-              "g": 255,
-              "b": 255,
+              "r": 0,
+              "g": 0,
+              "b": 0,
               "a": 0
             },
             "shininessExponent": 25,
             "glossiness": 0.168,
-            "metallic": 1
+            "metallic": 0.565
           },
           {},
           {}
