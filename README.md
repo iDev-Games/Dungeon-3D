@@ -2,7 +2,7 @@
 The source code to the browser game Dungeon 3D developed in Cocos Creator.
 
 # About the project
-This is the Alpha version of Dungeon 3D, A 3D browser based FPS game built in Cocos Creator 3.6.1. 
+This is the Alpha version of Dungeon 3D, A 3D browser based FPS game built in Cocos Creator 3.7.0. 
 
 https://iDev.Games/game/dungeon-3d
 
